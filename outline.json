@@ -4,15 +4,21 @@
             "id": "clickcounter-contract",
             "name": "ClickCounter Contract",
             "description": "Walkthrough for ClickCounter Contract",
-            "walkthrough": "clickcounter-contract/walkthrough/clickcounter-contract-en.md",
+            "walkthrough": {
+                "en": "clickcounter-contract/walkthrough/en/clickcounter-contract-en.md",
+                "es": "clickcounter-contract/walkthrough/es/clickcounter-contract-es.md"
+            },
             "code": "clickcounter-contract/code/",
             "video": "https://www.youtube.com/watch?v=7AoTBeDrFgk&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=31&pp=iAQB"
         },
         {
             "id": "savemyname-contract",
             "name": "SaveMyName Contract",
-            "description": "In our last contract, we learned how to store and update a simple number. Now, we are moving forward by storing text data\u2014a user\u2019s name and bio. SaveMyName.sol snehasharma76/30daysSolidity_Web3Compass master",
-            "walkthrough": "savemyname-contract/walkthrough/savemyname-contract-en.md",
+            "description": "In our last contract, we learned how to store and update a simple number. Now, we are moving forward by storing text data—a user's name and bio. SaveMyName.sol snehasharma76/30daysSolidity_Web3Compass master",
+            "walkthrough": {
+                "en": "savemyname-contract/walkthrough/en/savemyname-contract-en.md",
+                "es": "savemyname-contract/walkthrough/es/savemyname-contract-es.md"
+            },
             "code": "savemyname-contract/code/",
             "video": "https://www.youtube.com/watch?v=jMxpX_OiW4g&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=30&pp=iAQB"
         },
@@ -20,15 +26,21 @@
             "id": "pollstation-contract",
             "name": "PollStation Contract",
             "description": "This tutorial explores how arrays and mappings work in Solidity while breaking down the PollStation contract. PollStation.sol snehasharma76/30daysSolidity_Web3Compass master",
-            "walkthrough": "pollstation-contract/walkthrough/pollstation-contract-en.md",
+            "walkthrough": {
+                "en": "pollstation-contract/walkthrough/en/pollstation-contract-en.md",
+                "es": "pollstation-contract/walkthrough/es/pollstation-contract-es.md"
+            },
             "code": "pollstation-contract/code/",
             "video": "https://www.youtube.com/watch?v=uBre8NtNKxY&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=29&pp=iAQB"
         },
         {
             "id": "auctionhouse-contract",
             "name": "AuctionHouse Contract",
-            "description": "In this tutorial, we\u2019re going to build a complete auction system where users can place bids, and the highest bidder wins. AuctionHouse.sol snehasharma76/30daysSolidity_Web3Compass master",
-            "walkthrough": "auctionhouse-contract/walkthrough/auctionhouse-contract-en.md",
+            "description": "In this tutorial, we're going to build a complete auction system where users can place bids, and the highest bidder wins. AuctionHouse.sol snehasharma76/30daysSolidity_Web3Compass master",
+            "walkthrough": {
+                "en": "auctionhouse-contract/walkthrough/en/auctionhouse-contract-en.md",
+                "es": "auctionhouse-contract/walkthrough/es/auctionhouse-contract-es.md"
+            },
             "code": "auctionhouse-contract/code/",
             "video": "https://www.youtube.com/watch?v=OI9x4G6Tu-k&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=28&pp=iAQB"
         },
@@ -36,7 +48,10 @@
             "id": "admin-only-contract",
             "name": "Admin-Only Contract",
             "description": "This contract teaches you how to create functions that only the contract owner can call, using a modifier. AdminOnly.sol snehasharma76/30daysSolidity_Web3Compass master",
-            "walkthrough": "admin-only-contract/walkthrough/admin-only-contract-en.md",
+            "walkthrough": {
+                "en": "admin-only-contract/walkthrough/en/admin-only-contract-en.md",
+                "es": "admin-only-contract/walkthrough/es/admin-only-contract-es.md"
+            },
             "code": "admin-only-contract/code/",
             "video": "https://www.youtube.com/watch?v=MCz9RrQfpj8&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=27&pp=iAQB"
         },
