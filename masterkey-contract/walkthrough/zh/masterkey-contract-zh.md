@@ -152,333 +152,133 @@ flowchart TD
 
 **核心实体**
 
-| 表名
- | 字段
- | 类型
- | 说明
- |
+| 表名| 字段| 类型| 说明|
 | --- | --- | --- | --- |
-| accounts
- | address
- | VARCHAR(42) PK
- | 链上地址（0x+40hex），统一存小写
- |
-| 
- | label
- | TEXT
- | 可选备注/别名
- |
-| 
- | created_at
- | TIMESTAMP TZ
- | 创建时间
- |
+| accounts| address| VARCHAR(42) PK| 链上地址（0x+40hex），统一存小写|
+|
+ | label| TEXT| 可选备注/别名|
+|
+ | created_at| TIMESTAMP TZ| 创建时间|
 
-| 表名
- | 字段
- | 类型
- | 说明
- |
+| 表名| 字段| 类型| 说明|
 | --- | --- | --- | --- |
-| contracts
- | contract_address
- | VARCHAR(42) PK
- | VaultMaster 合约地址
- |
-| 
- | name
- | TEXT
- | 默认“VaultMaster”
- |
-| 
- | network
- | TEXT
- | 例如 ethereum、sepolia
- |
-| 
- | chain_id
- | BIGINT
- | 链 ID（如 1、11155111）
- |
-| 
- | deploy_tx_hash
- | VARCHAR(66)
- | 部署交易哈希
- |
-| 
- | owner_address
- | VARCHAR(42)
- | 当前所有者地址
- |
-| 
- | created_at
- | TIMESTAMP TZ
- | 创建时间
- |
-| 
- | updated_at
- | TIMESTAMP TZ
- | 更新时间
- |
+| contracts| contract_address| VARCHAR(42) PK| VaultMaster 合约地址|
+|
+ | name| TEXT| 默认“VaultMaster”|
+|
+ | network| TEXT| 例如 ethereum、sepolia|
+|
+ | chain_id| BIGINT| 链 ID（如 1、11155111）|
+|
+ | deploy_tx_hash| VARCHAR(66)| 部署交易哈希|
+|
+ | owner_address| VARCHAR(42)| 当前所有者地址|
+|
+ | created_at| TIMESTAMP TZ| 创建时间|
+|
+ | updated_at| TIMESTAMP TZ| 更新时间|
 
 **事件明细**
 
-| 表名
- | 字段
- | 类型
- | 说明
- |
+| 表名| 字段| 类型| 说明|
 | --- | --- | --- | --- |
-| ownership_transfers
- | id
- | BIGSERIAL PK
- | 事件主键
- |
-| 
- | contract_address
- | VARCHAR(42)
- | 合约地址
- |
-| 
- | previous_owner
- | VARCHAR(42)
- | 旧所有者
- |
-| 
- | new_owner
- | VARCHAR(42)
- | 新所有者
- |
-| 
- | tx_hash
- | VARCHAR(66)
- | 交易哈希
- |
-| 
- | block_number
- | BIGINT
- | 区块号
- |
-| 
- | log_index
- | INTEGER
- | 事件在区块内序号
- |
-| 
- | occurred_at_block_time
- | TIMESTAMP TZ
- | 区块时间
- |
-| 
- | created_at
- | TIMESTAMP TZ
- | 入库时间
- |
+| ownership_transfers| id| BIGSERIAL PK| 事件主键|
+|
+ | contract_address| VARCHAR(42)| 合约地址|
+|
+ | previous_owner| VARCHAR(42)| 旧所有者|
+|
+ | new_owner| VARCHAR(42)| 新所有者|
+|
+ | tx_hash| VARCHAR(66)| 交易哈希|
+|
+ | block_number| BIGINT| 区块号|
+|
+ | log_index| INTEGER| 事件在区块内序号|
+|
+ | occurred_at_block_time| TIMESTAMP TZ| 区块时间|
+|
+ | created_at| TIMESTAMP TZ| 入库时间|
 
-| 表名
- | 字段
- | 类型
- | 说明
- |
+| 表名| 字段| 类型| 说明|
 | --- | --- | --- | --- |
-| deposits
- | id
- | BIGSERIAL PK
- | 存款事件主键
- |
-| 
- | contract_address
- | VARCHAR(42)
- | 合约地址
- |
-| 
- | account_address
- | VARCHAR(42)
- | 存款人地址（indexed）
- |
-| 
- | amount_wei
- | NUMERIC(78,0)
- | 存入金额（Wei）
- |
-| 
- | tx_hash
- | VARCHAR(66)
- | 交易哈希
- |
-| 
- | block_number
- | BIGINT
- | 区块号
- |
-| 
- | log_index
- | INTEGER
- | 事件序号
- |
-| 
- | occurred_at_block_time
- | TIMESTAMP TZ
- | 区块时间
- |
-| 
- | created_at
- | TIMESTAMP TZ
- | 入库时间
- |
+| deposits| id| BIGSERIAL PK| 存款事件主键|
+|
+ | contract_address| VARCHAR(42)| 合约地址|
+|
+ | account_address| VARCHAR(42)| 存款人地址（indexed）|
+|
+ | amount_wei| NUMERIC(78,0)| 存入金额（Wei）|
+|
+ | tx_hash| VARCHAR(66)| 交易哈希|
+|
+ | block_number| BIGINT| 区块号|
+|
+ | log_index| INTEGER| 事件序号|
+|
+ | occurred_at_block_time| TIMESTAMP TZ| 区块时间|
+|
+ | created_at| TIMESTAMP TZ| 入库时间|
 
-| 表名
- | 字段
- | 类型
- | 说明
- |
+| 表名| 字段| 类型| 说明|
 | --- | --- | --- | --- |
-| withdrawals
- | id
- | BIGSERIAL PK
- | 提取事件主键
- |
-| 
- | contract_address
- | VARCHAR(42)
- | 合约地址
- |
-| 
- | recipient_address
- | VARCHAR(42)
- | 接收地址（indexed）
- |
-| 
- | amount_wei
- | NUMERIC(78,0)
- | 提取金额（Wei）
- |
-| 
- | tx_hash
- | VARCHAR(66)
- | 交易哈希
- |
-| 
- | block_number
- | BIGINT
- | 区块号
- |
-| 
- | log_index
- | INTEGER
- | 事件序号
- |
-| 
- | occurred_at_block_time
- | TIMESTAMP TZ
- | 区块时间
- |
-| 
- | created_at
- | TIMESTAMP TZ
- | 入库时间
- |
+| withdrawals| id| BIGSERIAL PK| 提取事件主键|
+|
+ | contract_address| VARCHAR(42)| 合约地址|
+|
+ | recipient_address| VARCHAR(42)| 接收地址（indexed）|
+|
+ | amount_wei| NUMERIC(78,0)| 提取金额（Wei）|
+|
+ | tx_hash| VARCHAR(66)| 交易哈希|
+|
+ | block_number| BIGINT| 区块号|
+|
+ | log_index| INTEGER| 事件序号|
+|
+ | occurred_at_block_time| TIMESTAMP TZ| 区块时间|
+|
+ | created_at| TIMESTAMP TZ| 入库时间|
 
 **状态与交易**
 
-| 表名
- | 字段
- | 类型
- | 说明
- |
+| 表名| 字段| 类型| 说明|
 | --- | --- | --- | --- |
-| balance_snapshots
- | id
- | BIGSERIAL PK
- | 快照主键
- |
-| 
- | contract_address
- | VARCHAR(42)
- | 合约地址
- |
-| 
- | balance_wei
- | NUMERIC(78,0)
- | address(this).balance
- |
-| 
- | block_number
- | BIGINT
- | 区块号
- |
-| 
- | tx_hash
- | VARCHAR(66)
- | 相关交易哈希（可空）
- |
-| 
- | occurred_at_block_time
- | TIMESTAMP TZ
- | 区块时间
- |
-| 
- | created_at
- | TIMESTAMP TZ
- | 入库时间
- |
+| balance_snapshots| id| BIGSERIAL PK| 快照主键|
+|
+ | contract_address| VARCHAR(42)| 合约地址|
+|
+ | balance_wei| NUMERIC(78,0)| address(this).balance|
+|
+ | block_number| BIGINT| 区块号|
+|
+ | tx_hash| VARCHAR(66)| 相关交易哈希（可空）|
+|
+ | occurred_at_block_time| TIMESTAMP TZ| 区块时间|
+|
+ | created_at| TIMESTAMP TZ| 入库时间|
 
-| 表名
- | 字段
- | 类型
- | 说明
- |
+| 表名| 字段| 类型| 说明|
 | --- | --- | --- | --- |
-| transactions
- | tx_hash
- | VARCHAR(66) PK
- | 交易哈希
- |
-| 
- | contract_address
- | VARCHAR(42)
- | 关联合约地址
- |
-| 
- | from_address
- | VARCHAR(42)
- | 发送方地址
- |
-| 
- | to_address
- | VARCHAR(42)
- | 接收方地址
- |
-| 
- | value_wei
- | NUMERIC(78,0)
- | 交易金额（Wei）
- |
-| 
- | block_number
- | BIGINT
- | 区块号
- |
-| 
- | tx_index
- | INTEGER
- | 交易序号
- |
-| 
- | status
- | SMALLINT
- | 1 成功，0 失败
- |
-| 
- | method
- | TEXT
- | 方法名：deposit、withdraw、constructor
- |
-| 
- | created_at
- | TIMESTAMP TZ
- | 入库时间
- |
+| transactions| tx_hash| VARCHAR(66) PK| 交易哈希|
+|
+ | contract_address| VARCHAR(42)| 关联合约地址|
+|
+ | from_address| VARCHAR(42)| 发送方地址|
+|
+ | to_address| VARCHAR(42)| 接收方地址|
+|
+ | value_wei| NUMERIC(78,0)| 交易金额（Wei）|
+|
+ | block_number| BIGINT| 区块号|
+|
+ | tx_index| INTEGER| 交易序号|
+|
+ | status| SMALLINT| 1 成功，0 失败|
+|
+ | method| TEXT| 方法名：deposit、withdraw、constructor|
+|
+ | created_at| TIMESTAMP TZ| 入库时间|
 
 # 2. 细节解说
 

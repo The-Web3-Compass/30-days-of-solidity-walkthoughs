@@ -41,7 +41,9 @@ graph TD
 | **Contract / 合约** | **Type / 类型** | **Bases / 基础合约** |  | **含义 / Description** |
 | --- | --- | --- | --- | --- |
 | SaveMyName.sol | Implementation - 实现合约（非接口或抽象合约） | 无继承合约 |  | 保存名字和个人简介 |
+
 | **Function Name / 函数名** | **Visibility / 可见性** | **Mutability / 可变性** | **Modifiers / 修饰器** | **含义 / Description** |
+| --- | --- | --- | --- | --- |
 | add | Public / 公开 | 状态修改操作（需要Gas费用） | NO / 无 | 存储用户姓名和简介 |
 | retrieve | Public / 公开 | view / 只读，不修改状态，无需Gas费 | NO / 无 | 读取并返回存储的名称和简介 |
 |  |  |  |  |  |

@@ -38,11 +38,12 @@ ID: 1
 
 ### **b.数据库结构**
 
-| **Contract / 合约** | **Type / 类型** | **Bases / 基础合约** |  | **含义 / Description**
- |
+| **Contract / 合约** | **Type / 类型** | **Bases / 基础合约** |  | **含义 / Description**|
 | --- | --- | --- | --- | --- |
 | ClickCounter |  Implementation - 实现合约（非接口或抽象合约） | 无继承合约 |  |  一个简单的区块链点击计数器应用 |
+
 | **Function Name / 函数名** | **Visibility / 可见性** | **Mutability / 可变性** | **Modifiers / 修饰器** | **含义 / Description** |
+| --- | --- | --- | --- | --- |
 | counter | Public / 公开 | view / 只读，不修改状态，无需Gas费 | NO / 无 | 获取当前点击计数器数值，任何人都可以免费调用 |
 | click | Public / 公开 | 状态修改操作（需要Gas费用） | NO / 无 | 增加点击计数，每次调用使计数器值+1 |
 

@@ -49,7 +49,9 @@ graph TD
 | **Contract** | **Type** | **Bases** | **中文说明** |
 | --- | --- | --- | --- |
 | MockWeatherOracle | Implementation | AggregatorV3Interface, Ownable | 模拟天气预言机，提供降雨量数据接口 |
+
 | **Function Name** | **Visibility** | **Mutability** | **中文说明** |
+| --- | --- | --- | --- |
 | constructor() | Public | nonpayable | 初始化轮次与时间戳，设置所有者 |
 | decimals() returns (uint8) | External | view | 返回小数位（此处为 0，毫米整数） |
 | description() returns (string) | External | view | 返回数据源描述字符串 |
@@ -83,7 +85,9 @@ graph TD
 | **Contract** | **Type** | **Bases** | **中文说明** |
 | --- | --- | --- | --- |
 | CropInsurance | Implementation | Ownable | 天气指数型农险：购买保单、触发理赔、提现与查询 |
+
 | **Function Name** | **Visibility** | **Mutability** | **中文说明** |
+| --- | --- | --- | --- |
 | constructor(address _weatherOracle, address _ethUsdPriceFeed) | Public | payable | 初始化天气与价格预言机地址，可接收初始资金 |
 | purchaseInsurance() | External | payable | 用户按当前 ETH 价支付保费并获得保单 |
 | checkRainfallAndClaim() | External | nonpayable | 检查降雨是否低于阈值，若满足则赔付 |

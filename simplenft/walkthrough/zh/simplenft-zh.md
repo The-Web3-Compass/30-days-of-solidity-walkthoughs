@@ -220,251 +220,92 @@ flowchart TD
 
 **addresses**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| id
- | 数字
- | 1
- |
-| address
- | 文本
- | 0x3F…A1c9
- |
-| created_at
- | 日期
- | 2025-10-17 00:57
- |
-| updated_at
- | 日期
- | 2025-10-17 00:57
- |
+| id| 数字| 1|
+| address| 文本| 0x3F…A1c9|
+| created_at| 日期| 2025-10-17 00:57|
+| updated_at| 日期| 2025-10-17 00:57|
 
 **tokens**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| token_id
- | 数字
- | 1
- |
-| owner_address
- | 文本
- | 0x3F…A1c9
- |
-| uri
- | 文本
- | ipfs://QmT7…2uN
- |
-| minted_at
- | 日期
- | 2025-10-17 00:58
- |
-| metadata_cached
- | 文本(JSON)
- | {“name”:“龙#1”,“image”:“ipfs://Qm…”}
- |
-| is_burned
- | 复选框
- | false
- |
+| token_id| 数字| 1|
+| owner_address| 文本| 0x3F…A1c9|
+| uri| 文本| ipfs://QmT7…2uN|
+| minted_at| 日期| 2025-10-17 00:58|
+| metadata_cached| 文本(JSON)| {“name”:“龙#1”,“image”:“ipfs://Qm…”}|
+| is_burned| 复选框| false|
 
 **balances**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| address
- | 文本
- | 0x3F…A1c9
- |
-| balance
- | 数字
- | 3
- |
-| updated_at
- | 日期
- | 2025-10-17 00:59
- |
+| address| 文本| 0x3F…A1c9|
+| balance| 数字| 3|
+| updated_at| 日期| 2025-10-17 00:59|
 
 **token_approvals**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| token_id
- | 数字
- | 1
- |
-| approved_address
- | 文本
- | 0xOp…Sea1
- |
-| updated_at
- | 日期
- | 2025-10-17 01:00
- |
+| token_id| 数字| 1|
+| approved_address| 文本| 0xOp…Sea1|
+| updated_at| 日期| 2025-10-17 01:00|
 
 **operator_approvals**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| owner_address
- | 文本
- | 0x3F…A1c9
- |
-| operator_address
- | 文本
- | 0xOp…Sea1
- |
-| approved
- | 复选框
- | true
- |
-| updated_at
- | 日期
- | 2025-10-17 01:01
- |
+| owner_address| 文本| 0x3F…A1c9|
+| operator_address| 文本| 0xOp…Sea1|
+| approved| 复选框| true|
+| updated_at| 日期| 2025-10-17 01:01|
 
 **transfers**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| id
- | 数字
- | 42
- |
-| token_id
- | 数字
- | 1
- |
-| from_address
- | 文本
- | 0x0000000000000000000000000000000000000000
- |
-| to_address
- | 文本
- | 0x7B…92e3
- |
-| tx_hash
- | 文本
- | 0xabc…789
- |
-| block_number
- | 数字
- | 5690021
- |
-| timestamp
- | 日期
- | 2025-10-17 01:02
- |
+| id| 数字| 42|
+| token_id| 数字| 1|
+| from_address| 文本| 0x0000000000000000000000000000000000000000|
+| to_address| 文本| 0x7B…92e3|
+| tx_hash| 文本| 0xabc…789|
+| block_number| 数字| 5690021|
+| timestamp| 日期| 2025-10-17 01:02|
 
 **approvals**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| id
- | 数字
- | 7
- |
-| owner_address
- | 文本
- | 0x3F…A1c9
- |
-| approved_address
- | 文本
- | 0xOp…Sea1
- |
-| token_id
- | 数字
- | 1
- |
-| tx_hash
- | 文本
- | 0xdef…123
- |
-| block_number
- | 数字
- | 5690025
- |
-| timestamp
- | 日期
- | 2025-10-17 01:03
- |
+| id| 数字| 7|
+| owner_address| 文本| 0x3F…A1c9|
+| approved_address| 文本| 0xOp…Sea1|
+| token_id| 数字| 1|
+| tx_hash| 文本| 0xdef…123|
+| block_number| 数字| 5690025|
+| timestamp| 日期| 2025-10-17 01:03|
 
 **approval_for_all**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| id
- | 数字
- | 11
- |
-| owner_address
- | 文本
- | 0x3F…A1c9
- |
-| operator_address
- | 文本
- | 0xOp…Sea1
- |
-| approved
- | 复选框
- | true
- |
-| tx_hash
- | 文本
- | 0xaaa…555
- |
-| block_number
- | 数字
- | 5690033
- |
-| timestamp
- | 日期
- | 2025-10-17 01:04
- |
+| id| 数字| 11|
+| owner_address| 文本| 0x3F…A1c9|
+| operator_address| 文本| 0xOp…Sea1|
+| approved| 复选框| true|
+| tx_hash| 文本| 0xaaa…555|
+| block_number| 数字| 5690033|
+| timestamp| 日期| 2025-10-17 01:04|
 
 **counters（可选）**
 
-| 名称
- | 类型
- | 示例值
- |
+| 名称| 类型| 示例值|
 | --- | --- | --- |
-| name
- | 文本
- | tokenIdCounter
- |
-| current_value
- | 数字
- | 1024
- |
-| updated_at
- | 日期
- | 2025-10-17 01:05
- |
+| name| 文本| tokenIdCounter|
+| current_value| 数字| 1024|
+| updated_at| 日期| 2025-10-17 01:05|
 
 # 2. 细节解说
 

@@ -46,7 +46,9 @@ graph TD
 
 | Contract | Type | Bases |  |  | 含义 |
 | --- | --- | --- | --- | --- | --- |
+
 | └ | **Function Name** | **Visibility** | **Mutability** | **Modifiers** |  |
+| --- | --- | --- | --- | --- | --- |
 |  |  |  |  |  |  |
 | **PollStation** | Implementation |  |  |  |  |
 | └ | addCandidateNames | Public ❗️ | 🛑 | NO❗️ | 登记参选人 |
