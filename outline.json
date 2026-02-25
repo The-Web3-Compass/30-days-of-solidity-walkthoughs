@@ -6,7 +6,8 @@
             "description": "Walkthrough for ClickCounter Contract",
             "walkthrough": {
                 "en": "clickcounter-contract/walkthrough/en/clickcounter-contract-en.md",
-                "es": "clickcounter-contract/walkthrough/es/clickcounter-contract-es.md"
+                "es": "clickcounter-contract/walkthrough/es/clickcounter-contract-es.md",
+                "zh": "clickcounter-contract/walkthrough/zh/clickcounter-contract-zh.md"
             },
             "code": "clickcounter-contract/code/",
             "video": "https://www.youtube.com/watch?v=7AoTBeDrFgk&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=31&pp=iAQB"
@@ -17,7 +18,8 @@
             "description": "In our last contract, we learned how to store and update a simple number. Now, we are moving forward by storing text data—a user's name and bio. SaveMyName.sol snehasharma76/30daysSolidity_Web3Compass master",
             "walkthrough": {
                 "en": "savemyname-contract/walkthrough/en/savemyname-contract-en.md",
-                "es": "savemyname-contract/walkthrough/es/savemyname-contract-es.md"
+                "es": "savemyname-contract/walkthrough/es/savemyname-contract-es.md",
+                "zh": "savemyname-contract/walkthrough/zh/savemyname-contract-zh.md"
             },
             "code": "savemyname-contract/code/",
             "video": "https://www.youtube.com/watch?v=jMxpX_OiW4g&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=30&pp=iAQB"
@@ -28,7 +30,8 @@
             "description": "This tutorial explores how arrays and mappings work in Solidity while breaking down the PollStation contract. PollStation.sol snehasharma76/30daysSolidity_Web3Compass master",
             "walkthrough": {
                 "en": "pollstation-contract/walkthrough/en/pollstation-contract-en.md",
-                "es": "pollstation-contract/walkthrough/es/pollstation-contract-es.md"
+                "es": "pollstation-contract/walkthrough/es/pollstation-contract-es.md",
+                "zh": "pollstation-contract/walkthrough/zh/pollstation-contract-zh.md"
             },
             "code": "pollstation-contract/code/",
             "video": "https://www.youtube.com/watch?v=uBre8NtNKxY&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=29&pp=iAQB"
@@ -39,7 +42,8 @@
             "description": "In this tutorial, we're going to build a complete auction system where users can place bids, and the highest bidder wins. AuctionHouse.sol snehasharma76/30daysSolidity_Web3Compass master",
             "walkthrough": {
                 "en": "auctionhouse-contract/walkthrough/en/auctionhouse-contract-en.md",
-                "es": "auctionhouse-contract/walkthrough/es/auctionhouse-contract-es.md"
+                "es": "auctionhouse-contract/walkthrough/es/auctionhouse-contract-es.md",
+                "zh": "auctionhouse-contract/walkthrough/zh/auctionhouse-contract-zh.md"
             },
             "code": "auctionhouse-contract/code/",
             "video": "https://www.youtube.com/watch?v=OI9x4G6Tu-k&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=28&pp=iAQB"
@@ -50,7 +54,8 @@
             "description": "This contract teaches you how to create functions that only the contract owner can call, using a modifier. AdminOnly.sol snehasharma76/30daysSolidity_Web3Compass master",
             "walkthrough": {
                 "en": "admin-only-contract/walkthrough/en/admin-only-contract-en.md",
-                "es": "admin-only-contract/walkthrough/es/admin-only-contract-es.md"
+                "es": "admin-only-contract/walkthrough/es/admin-only-contract-es.md",
+                "zh": "admin-only-contract/walkthrough/zh/admin-only-contract-zh.md"
             },
             "code": "admin-only-contract/code/",
             "video": "https://www.youtube.com/watch?v=MCz9RrQfpj8&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=27&pp=iAQB"
@@ -58,56 +63,77 @@
         {
             "id": "the-ether-piggy-bank",
             "name": "The Ether Piggy Bank",
-            "description": "Let\u2019s go back to where it all began. You\u2019ve already built an auction system where users could place bids. You\u2019ve created a treasure chest that only an admin could unlock. You\u2019ve learned how to track balances and restrict access using modifiers. But let\u2019s be real \u2014 so far, we\u2019ve been playing with toy money. Just numbers stored on the blockchain. What if we wanted to build something a little more practical? Something a little more real?",
-            "walkthrough": "the-ether-piggy-bank/walkthrough/the-ether-piggy-bank-en.md",
+            "description": "Let’s go back to where it all began. You’ve already built an auction system where users could place bids. You’ve created a treasure chest that only an admin could unlock. You’ve learned how to track balances and restrict access using modifiers. But let’s be real — so far, we’ve been playing with toy money. Just numbers stored on the blockchain. What if we wanted to build something a little more practical? Something a little more real?",
+            "walkthrough": {
+                "en": "the-ether-piggy-bank/walkthrough/the-ether-piggy-bank-en.md",
+                "zh": "the-ether-piggy-bank/walkthrough/zh/the-ether-piggy-bank-zh.md"
+            },
             "code": "the-ether-piggy-bank/code/",
             "video": "https://www.youtube.com/watch?v=sxWujOuZRuw&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=26&pp=iAQB"
         },
         {
             "id": "simple-iou-contract",
             "name": "Simple IOU Contract",
-            "description": "Let\u2019s say you and your friends go out often \u2014 splitting bills, paying for travel, buying group gifts. Most of the time, one person pays upfront and the rest say \u201cI\u2019ll pay you back later.\u201d But you\u2019ve probably been in this situation: \u201cWait\u2026 how much do I owe you again?\u201d It gets messy fast. That\u2019s where this smart contract comes in. SimpleIOU is your on-chain group ledger. It helps friends: * Keep a crystal-clear record of who owes whom.",
-            "walkthrough": "simple-iou-contract/walkthrough/simple-iou-contract-en.md",
+            "description": "Let’s say you and your friends go out often — splitting bills, paying for travel, buying group gifts. Most of the time, one person pays upfront and the rest say “I’ll pay you back later.” But you’ve probably been in this situation: “Wait… how much do I owe you again?” It gets messy fast. That’s where this smart contract comes in. SimpleIOU is your on-chain group ledger. It helps friends: * Keep a crystal-clear record of who owes whom.",
+            "walkthrough": {
+                "en": "simple-iou-contract/walkthrough/simple-iou-contract-en.md",
+                "zh": "simple-iou-contract/walkthrough/zh/simple-iou-contract-zh.md"
+            },
             "code": "simple-iou-contract/code/",
             "video": "https://www.youtube.com/watch?v=J0XWaNMFN-c&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=25&pp=iAQB"
         },
         {
             "id": "tipjar-contract",
             "name": "TipJar Contract",
-            "description": "Today, we\u2019re building a smart contract called TipJar that lets people send you tips in multiple currencies (USD, EUR, etc.) and handles the conversion to ETH under the hood.",
-            "walkthrough": "tipjar-contract/walkthrough/tipjar-contract-en.md",
+            "description": "Today, we’re building a smart contract called TipJar that lets people send you tips in multiple currencies (USD, EUR, etc.) and handles the conversion to ETH under the hood.",
+            "walkthrough": {
+                "en": "tipjar-contract/walkthrough/tipjar-contract-en.md",
+                "zh": "tipjar-contract/walkthrough/zh/tipjar-contract-zh.md"
+            },
             "code": "tipjar-contract/code/",
             "video": "https://www.youtube.com/watch?v=zidzGRim__I&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=24&pp=iAQB"
         },
         {
             "id": "smart-calculator",
             "name": "Smart Calculator",
-            "description": "We\u2019re going to build two smart contracts that work together: a basic Calculator and a ScientificCalculator for advanced math.",
-            "walkthrough": "smart-calculator/walkthrough/smart-calculator-en.md",
+            "description": "We’re going to build two smart contracts that work together: a basic Calculator and a ScientificCalculator for advanced math.",
+            "walkthrough": {
+                "en": "smart-calculator/walkthrough/smart-calculator-en.md",
+                "zh": "smart-calculator/walkthrough/zh/smart-calculator-zh.md"
+            },
             "code": "smart-calculator/code/",
             "video": "https://www.youtube.com/watch?v=AUA6yZBabJ0&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=23&pp=iAQB"
         },
         {
             "id": "activitytracker-contract",
             "name": "ActivityTracker Contract",
-            "description": "Today, we\u2019re building a SimpleFitnessTracker to teach you one of the most powerful features in all of Solidity: events.",
-            "walkthrough": "activitytracker-contract/walkthrough/activitytracker-contract-en.md",
+            "description": "Today, we’re building a SimpleFitnessTracker to teach you one of the most powerful features in all of Solidity: events.",
+            "walkthrough": {
+                "en": "activitytracker-contract/walkthrough/activitytracker-contract-en.md",
+                "zh": "activitytracker-contract/walkthrough/zh/activitytracker-contract-zh.md"
+            },
             "code": "activitytracker-contract/code/",
             "video": "https://www.youtube.com/watch?v=QgtW7mwRPC0&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=22&pp=iAQB"
         },
         {
             "id": "masterkey-contract",
             "name": "Masterkey Contract",
-            "description": "Alright, let\u2019s switch things up a bit. Up until now, you\u2019ve probably been writing smart contracts one at a time \u2014 everything packed into a single file, doing its own thing. But as your contracts get more complex, you\u2019ll start to notice the repetition. > \u201cDidn\u2019t I already write this ownership logic somewhere else?\u201d \u201cWhy am I copying the same onlyOwner check again?\u201d This is where Solidity gives you something powerful: inheritance.",
-            "walkthrough": "masterkey-contract/walkthrough/masterkey-contract-en.md",
+            "description": "Alright, let’s switch things up a bit. Up until now, you’ve probably been writing smart contracts one at a time — everything packed into a single file, doing its own thing. But as your contracts get more complex, you’ll start to notice the repetition. > “Didn’t I already write this ownership logic somewhere else?” “Why am I copying the same onlyOwner check again?” This is where Solidity gives you something powerful: inheritance.",
+            "walkthrough": {
+                "en": "masterkey-contract/walkthrough/masterkey-contract-en.md",
+                "zh": "masterkey-contract/walkthrough/zh/masterkey-contract-zh.md"
+            },
             "code": "masterkey-contract/code/",
             "video": "https://www.youtube.com/watch?v=irc--Pts8zw&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=21&pp=iAQB"
         },
         {
             "id": "myfirsttoken-contract",
             "name": "MyFirstToken Contract",
-            "description": "What if, instead of just holding or moving around ETH, we wanted to create our own token? Today, we\u2019re writing an ERC-20 token.",
-            "walkthrough": "myfirsttoken-contract/walkthrough/myfirsttoken-contract-en.md",
+            "description": "What if, instead of just holding or moving around ETH, we wanted to create our own token? Today, we’re writing an ERC-20 token.",
+            "walkthrough": {
+                "en": "myfirsttoken-contract/walkthrough/myfirsttoken-contract-en.md",
+                "zh": "myfirsttoken-contract/walkthrough/zh/myfirsttoken-contract-zh.md"
+            },
             "code": "myfirsttoken-contract/code/",
             "video": "https://www.youtube.com/watch?v=59b60LEo1Lo&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=20&pp=iAQB"
         },
@@ -115,7 +141,10 @@
             "id": "preordertokens",
             "name": "PreorderTokens",
             "description": "Let's build a token sale contract where users send ETH and receive tokens in return at a fixed rate. We'll inherit from our SimpleERC20 and override functions to lock transfers during the sale.",
-            "walkthrough": "preordertokens/walkthrough/preordertokens-en.md",
+            "walkthrough": {
+                "en": "preordertokens/walkthrough/preordertokens-en.md",
+                "zh": "preordertokens/walkthrough/zh/preordertokens-zh.md"
+            },
             "code": "preordertokens/code/",
             "video": "https://www.youtube.com/watch?v=P8qmIlSLOLA&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=19&pp=iAQB"
         },
@@ -123,7 +152,10 @@
             "id": "safedeposit-contract",
             "name": "SafeDeposit contract",
             "description": "Building a modular vault system using Interfaces and Abstract contracts.",
-            "walkthrough": "safedeposit-contract/walkthrough/safedeposit-contract-en.md",
+            "walkthrough": {
+                "en": "safedeposit-contract/walkthrough/safedeposit-contract-en.md",
+                "zh": "safedeposit-contract/walkthrough/zh/safedeposit-contract-zh.md"
+            },
             "code": "safedeposit-contract/code/",
             "video": "https://www.youtube.com/watch?v=cqZ9gBj5S-A&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=18&pp=iAQB0gcJCYcKAYcqIYzv"
         },
@@ -131,23 +163,32 @@
             "id": "gas-efficient-voting",
             "name": "Gas-Efficient Voting",
             "description": "Optimizing smart contracts to reduce gas costs, focusing on storage packing and bit manipulation.",
-            "walkthrough": "gas-efficient-voting/walkthrough/gas-efficient-voting-en.md",
+            "walkthrough": {
+                "en": "gas-efficient-voting/walkthrough/gas-efficient-voting-en.md",
+                "zh": "gas-efficient-voting/walkthrough/zh/gas-efficient-voting-zh.md"
+            },
             "code": "gas-efficient-voting/code/",
             "video": "https://www.youtube.com/watch?v=AeVctT0E61s&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=16&pp=iAQB"
         },
         {
             "id": "pluginstore-contract",
             "name": "PluginStore Contract",
-            "description": "Alright, imagine you're building a Web3 game \u2014 something with lore, battles, character progression, maybe even trading. Naturally, every player has a profile \u2014 their name, avatar, equipped weapons, achievements, social links, battle logs\u2026 the works. Now here's the catch: If you try to cram all of that into a single smart contract, things get bloated fast. You\u2019ll hit storage limits, upgrade issues, and you'll lose flexibility. So what if we modularized the whole thing? Instead of one gigantic contract, we build a lightweight core profile contract that just stores name and avatar... ...and let users \"install\" optional feature plugins \u2014 little smart contracts that handle specific things like achievements, inventory, battle stats, or social activity.",
-            "walkthrough": "pluginstore-contract/walkthrough/pluginstore-contract-en.md",
+            "description": "Alright, imagine you're building a Web3 game — something with lore, battles, character progression, maybe even trading. Naturally, every player has a profile — their name, avatar, equipped weapons, achievements, social links, battle logs… the works. Now here's the catch: If you try to cram all of that into a single smart contract, things get bloated fast. You’ll hit storage limits, upgrade issues, and you'll lose flexibility. So what if we modularized the whole thing? Instead of one gigantic contract, we build a lightweight core profile contract that just stores name and avatar... ...and let users \"install\" optional feature plugins — little smart contracts that handle specific things like achievements, inventory, battle stats, or social activity.",
+            "walkthrough": {
+                "en": "pluginstore-contract/walkthrough/pluginstore-contract-en.md",
+                "zh": "pluginstore-contract/walkthrough/zh/pluginstore-contract-zh.md"
+            },
             "code": "pluginstore-contract/code/",
             "video": "https://www.youtube.com/watch?v=3j-SrLl412o&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=15&pp=iAQB"
         },
         {
             "id": "upgradehub",
             "name": "UpgradeHub",
-            "description": "Imagine you\u2019ve launched a smart contract into the wild. It\u2019s running smoothly, users are subscribing, the ETH is flowing\u2026 and then, boom \u2014 you discover a bug. Or maybe you want to add a new feature. Or you realize your logic could be way more efficient. In web2, if you fix a bug or add a feature, you just push an update to your server. But in web3? A smart contract is immutable. Once deployed, it\u2019s locked in. Unless\u2026 you design it to be upgradeable.",
-            "walkthrough": "upgradehub/walkthrough/upgradehub-en.md",
+            "description": "Imagine you’ve launched a smart contract into the wild. It’s running smoothly, users are subscribing, the ETH is flowing… and then, boom — you discover a bug. Or maybe you want to add a new feature. Or you realize your logic could be way more efficient. In web2, if you fix a bug or add a feature, you just push an update to your server. But in web3? A smart contract is immutable. Once deployed, it’s locked in. Unless… you design it to be upgradeable.",
+            "walkthrough": {
+                "en": "upgradehub/walkthrough/upgradehub-en.md",
+                "zh": "upgradehub/walkthrough/zh/upgradehub-zh.md"
+            },
             "code": "upgradehub/code/",
             "video": "https://www.youtube.com/watch?v=4AXyPg4GwHU&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=14&pp=iAQB"
         },
@@ -155,7 +196,10 @@
             "id": "oracle-contract",
             "name": "Oracle Contract",
             "description": "Smart contracts live in a \"sealed box\" and can't access real-world data like weather or prices natively. Oracles act as bridges, feeding off-chain data into contracts.",
-            "walkthrough": "oracle-contract/walkthrough/oracle-contract-en.md",
+            "walkthrough": {
+                "en": "oracle-contract/walkthrough/oracle-contract-en.md",
+                "zh": "oracle-contract/walkthrough/zh/oracle-contract-zh.md"
+            },
             "code": "oracle-contract/code/",
             "video": "https://www.youtube.com/watch?v=FnTUo_WWSTg&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=13&pp=iAQB"
         },
@@ -163,7 +207,10 @@
             "id": "signthis-contract",
             "name": "SignThis Contract",
             "description": "Instead of storing an expensive on-chain whitelist for a private event, we use off-chain signatures to verify attendee eligibility.",
-            "walkthrough": "signthis-contract/walkthrough/signthis-contract-en.md",
+            "walkthrough": {
+                "en": "signthis-contract/walkthrough/signthis-contract-en.md",
+                "zh": "signthis-contract/walkthrough/zh/signthis-contract-zh.md"
+            },
             "code": "signthis-contract/code/",
             "video": "https://www.youtube.com/watch?v=delfyPTbHY8&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=12&pp=iAQB"
         },
@@ -171,7 +218,10 @@
             "id": "fortknox-contract",
             "name": "FortKnox Contract",
             "description": "Reentrancy is a classic exploit where an attacker recursively calls a withdrawal function before their balance is updated, siphoning more funds than intended.",
-            "walkthrough": "fortknox-contract/walkthrough/fortknox-contract-en.md",
+            "walkthrough": {
+                "en": "fortknox-contract/walkthrough/fortknox-contract-en.md",
+                "zh": "fortknox-contract/walkthrough/zh/fortknox-contract-zh.md"
+            },
             "code": "fortknox-contract/code/",
             "video": "https://www.youtube.com/watch?v=Q9oEHYQGQI4&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=11&pp=iAQB"
         },
@@ -179,7 +229,10 @@
             "id": "simplenft",
             "name": "SimpleNFT",
             "description": "Walkthrough for SimpleNFT",
-            "walkthrough": "simplenft/walkthrough/simplenft-en.md",
+            "walkthrough": {
+                "en": "simplenft/walkthrough/simplenft-en.md",
+                "zh": "simplenft/walkthrough/zh/simplenft-zh.md"
+            },
             "code": "simplenft/code/",
             "video": "https://www.youtube.com/watch?v=DdvrGf5Rg4Q&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=10&pp=iAQB"
         },
@@ -187,7 +240,10 @@
             "id": "decentralisedlottery-contract",
             "name": "DecentralisedLottery contract",
             "description": "Build a decentralized lottery that is provably fair and fully automated using Chainlink VRF.",
-            "walkthrough": "decentralisedlottery-contract/walkthrough/decentralisedlottery-contract-en.md",
+            "walkthrough": {
+                "en": "decentralisedlottery-contract/walkthrough/decentralisedlottery-contract-en.md",
+                "zh": "decentralisedlottery-contract/walkthrough/zh/decentralisedlottery-contract-zh.md"
+            },
             "code": "decentralisedlottery-contract/code/",
             "video": "https://www.youtube.com/watch?v=IciiaXNIscg&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=9&pp=iAQB"
         },
@@ -195,7 +251,10 @@
             "id": "lendingpool-contract",
             "name": "LendingPool Contract",
             "description": "Build a simple DeFi lending pool that allows users to deposit ETH, lock collateral, and borrow ETH with interest.",
-            "walkthrough": "lendingpool-contract/walkthrough/lendingpool-contract-en.md",
+            "walkthrough": {
+                "en": "lendingpool-contract/walkthrough/lendingpool-contract-en.md",
+                "zh": "lendingpool-contract/walkthrough/zh/lendingpool-contract-zh.md"
+            },
             "code": "lendingpool-contract/code/",
             "video": "https://www.youtube.com/watch?v=lnAFa73apAE&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=8&pp=iAQB"
         },
@@ -203,7 +262,10 @@
             "id": "decentraliseescrow-contract",
             "name": "DecentraliseEscrow Contract",
             "description": "A secure smart contract middleman for trustless transactions between a buyer and a seller with an arbiter for dispute resolution.",
-            "walkthrough": "decentraliseescrow-contract/walkthrough/decentraliseescrow-contract-en.md",
+            "walkthrough": {
+                "en": "decentraliseescrow-contract/walkthrough/decentraliseescrow-contract-en.md",
+                "zh": "decentraliseescrow-contract/walkthrough/zh/decentraliseescrow-contract-zh.md"
+            },
             "code": "decentraliseescrow-contract/code/",
             "video": "https://www.youtube.com/watch?v=Ar6AR6I-j-s&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=7&pp=iAQB"
         },
@@ -211,23 +273,32 @@
             "id": "automated-market-maker",
             "name": "Automated Market Maker",
             "description": "Understand and build the core engine of DeFi using the x * y = k constant product formula.",
-            "walkthrough": "automated-market-maker/walkthrough/automated-market-maker-en.md",
+            "walkthrough": {
+                "en": "automated-market-maker/walkthrough/automated-market-maker-en.md",
+                "zh": "automated-market-maker/walkthrough/zh/automated-market-maker-zh.md"
+            },
             "code": "automated-market-maker/code/",
             "video": "https://www.youtube.com/watch?v=xcaz8XQmtE8&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=6&pp=iAQB"
         },
         {
             "id": "nft-marketplace",
             "name": "NFT Marketplace",
-            "description": "Hey hey, welcome back to 30 Days of Solidity \u2014 where every day, you level up not just by reading about how smart contracts work\u2026 But by actually building things that feel like real-world apps. Today, you\u2019re building your own NFT Marketplace.",
-            "walkthrough": "nft-marketplace/walkthrough/nft-marketplace-en.md",
+            "description": "Hey hey, welcome back to 30 Days of Solidity — where every day, you level up not just by reading about how smart contracts work… But by actually building things that feel like real-world apps. Today, you’re building your own NFT Marketplace.",
+            "walkthrough": {
+                "en": "nft-marketplace/walkthrough/nft-marketplace-en.md",
+                "zh": "nft-marketplace/walkthrough/zh/nft-marketplace-zh.md"
+            },
             "code": "nft-marketplace/code/",
             "video": "https://www.youtube.com/watch?v=kNIzxWTi89g&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=5&pp=iAQB"
         },
         {
             "id": "yieldfarming-contract",
             "name": "Yield Farming Platform",
-            "description": "Welcome back! Today you\u2019re building a Yield Farming Platform. Stake tokens \u2192 Let time pass \u2192 Harvest rewards.",
-            "walkthrough": "yieldfarming-contract/walkthrough/yieldfarming-contract-en.md",
+            "description": "Welcome back! Today you’re building a Yield Farming Platform. Stake tokens → Let time pass → Harvest rewards.",
+            "walkthrough": {
+                "en": "yieldfarming-contract/walkthrough/yieldfarming-contract-en.md",
+                "zh": "yieldfarming-contract/walkthrough/zh/yieldfarming-contract-zh.md"
+            },
             "code": "yieldfarming-contract/code/",
             "video": "https://www.youtube.com/watch?v=Noly0ZUzfeE&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=3&pp=iAQB0gcJCYcKAYcqIYzv"
         },
@@ -235,7 +306,10 @@
             "id": "decentralisedgovernance-contract",
             "name": "Decentralized Governance System",
             "description": "Today we build a DAO. No CEOs, just community votes on-chain.",
-            "walkthrough": "decentralisedgovernance-contract/walkthrough/decentralisedgovernance-contract-en.md",
+            "walkthrough": {
+                "en": "decentralisedgovernance-contract/walkthrough/decentralisedgovernance-contract-en.md",
+                "zh": "decentralisedgovernance-contract/walkthrough/zh/decentralisedgovernance-contract-zh.md"
+            },
             "code": "decentralisedgovernance-contract/code/",
             "video": "https://www.youtube.com/watch?v=SoWNluca-Bk&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=4&pp=iAQB"
         },
@@ -243,15 +317,21 @@
             "id": "stablecoin-contract",
             "name": "SimpleStablecoin",
             "description": "Building an anchor in the stormy seas of crypto. A 1:1 USD-pegged stablecoin backed by overcollateralization (150%).",
-            "walkthrough": "stablecoin-contract/walkthrough/stablecoin-contract-en.md",
+            "walkthrough": {
+                "en": "stablecoin-contract/walkthrough/stablecoin-contract-en.md",
+                "zh": "stablecoin-contract/walkthrough/zh/stablecoin-contract-zh.md"
+            },
             "code": "stablecoin-contract/code/",
             "video": "https://www.youtube.com/watch?v=oyitivoEyEg&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=2&pp=iAQB"
         },
         {
             "id": "day-30-the-final-build-your-own-mini-dex",
-            "name": "Day 30 \u2013 The Final Build: Your Own Mini DEX",
+            "name": "Day 30 – The Final Build: Your Own Mini DEX",
             "description": "The capstone project! A Mini Decentralized Exchange comprising two main contracts: a Pair contract and a Factory contract.",
-            "walkthrough": "day-30-the-final-build-your-own-mini-dex/walkthrough/day-30-the-final-build-your-own-mini-dex-en.md",
+            "walkthrough": {
+                "en": "day-30-the-final-build-your-own-mini-dex/walkthrough/day-30-the-final-build-your-own-mini-dex-en.md",
+                "zh": "day-30-the-final-build-your-own-mini-dex/walkthrough/zh/day-30-the-final-build-your-own-mini-dex-zh.md"
+            },
             "code": "day-30-the-final-build-your-own-mini-dex/code/",
             "video": "https://www.youtube.com/watch?v=mcMp_X1pH4M&list=PL3gCWoU4wyU35lrmNNrQpk_-UIlmmco6M&index=1&pp=iAQB"
         }
