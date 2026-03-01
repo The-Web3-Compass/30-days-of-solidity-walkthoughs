@@ -119,7 +119,7 @@ ID: 19
     - 验证hasAttended状态
     - 查看签到历史记录
 
-![image.png](%E7%AD%BE%E5%90%8D%E9%AA%8C%E8%AF%81%2028c06421268880a1a3b5d1d75cf53398/image.png)
+
 
 ### **b.数据库结构**
 
